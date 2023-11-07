@@ -1,0 +1,262 @@
+:root{
+    --blanco:#fff;
+    --oscuro:#212121;
+    --primario: #ffc107;
+    --secundario:#0097a7;
+    --gris:#757575;
+    --grisClaro:#DFE9F3;
+
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+*, *:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+background-image: linear-gradient(to top, var(--grisClaro)0%, var(--blanco)100%);}
+
+.titulo{
+    text-align: center;
+}  
+.titulo span {
+    font-size: 1.2rem;
+}
+h2 span {
+    color: var(--primario);
+    font-size: 2,8rem;
+  
+}
+
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.navegacion-principal{
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal{
+    flex-direction: row;
+    justify-content:space-around;    
+    
+    }
+}
+
+    
+
+   
+
+.navegacion-principal a{ 
+    font-weight: bold;
+    color:var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+
+
+   
+
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro)
+
+}
+
+.hero{
+     background-image: url(../img/hero.jpg);
+     background-repeat: no-repeat;
+     height: 450px;
+     background-size: cover;
+     
+     
+
+}
+
+.contenido-hero{
+    background-color: rgba(0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    padding: 20px;     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+}
+.contenido-hero h2 {
+    color: #fff;
+   
+    
+}
+.contenido-hero p,
+.contenido-hero h3 {
+    color:#fff
+}
+.emoticono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    
+}
+
+.parrafoespecial{
+    display: flex;
+}
+
+
+.boton{
+    background-color:var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-weight: 700;
+    border: none;
+    width: 90%;
+    text-align: center;
+    width: auto;
+}
+.boton:hover{
+    cursor: pointer;
+}
+@media (min-width: 768px){
+   .boton{
+    width: auto;
+    margin: 3rem;
+    }
+}
+
+
+   
+.Redondo{
+    text-align: center;
+}
+
+
+.sombra{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+background-color: var(--blanco);
+padding: 2rem;
+margin-top: 2rem;
+border-radius: 2rem;
+}
+.servicio{
+    display: flex;
+    flex-direction:column;
+    grid-template-columns: 1fr  1fr 1fr;   
+}
+
+
+@media (min-width: 768px){
+    .servicio{
+
+        grid-template-columns: 1fr  1fr 1fr;   
+
+     }
+ }
+
+
+ .servicio.iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+}
+
+/*formulario*/
+.formulario{
+    
+    background-color: var(--gris);
+    margin: 0% auto;
+    width:min(60rem,90%);
+padding: 2rem;
+border-radius: 1rem;
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color:var(--primario);
+
+
+}
+.formulario.fieldset{
+    border:none;
+}
+.campo label{
+    display: block;
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+
+}
+.input-text{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border:none;
+
+
+
+}
+.campo textarea{
+    height: 20rem;
+    
+}
+.boton{
+    background-color:var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    font-weight: 700;
+    border: none;
+    width: 90%;
+    text-align: center;
+    width: auto;
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+
+.contacto{
+text-align: center;
+}
+
+@media (min-width:768px){
+    .contenedor-campos{
+        display: grid;
+        grid-template-areas: 50%;
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+      grid-column: 1/3;
+    }
+
+}
